@@ -1,0 +1,28 @@
+#toggle {
+    display: none;
+    visibility: hidden;
+}
+
+#toggle:checked ~ #expand {
+    height: auto;
+}
+
+#expand {
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+
+.label-expand::before {
+    font-family: Consolas, monaco, monospace;
+    font-weight: bold;
+    content: "+ ";
+}
+
+#toggle:checked ~ .label-expand::before {
+    content: "- ";
+}
+
+p {
+    margin-bottom: 0;
+}

@@ -1,0 +1,15 @@
+p, ul {
+    font-weight: 200;
+    font-size: 1.6rem;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-weight: 400;
+    color: #238D0
+}

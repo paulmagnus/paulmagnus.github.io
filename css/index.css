@@ -1,0 +1,14 @@
+p {
+    margin-bottom: 0;
+}
+
+.collapseable {
+    height: 0px;
+    overflow: hidden;
+}
+
+.frame {
+    border-style: solid;
+    border-color: #00bfff;
+    border-width: 1px;
+}
