@@ -1816,6 +1816,7 @@ blockquote p {
     padding-bottom: 1.25rem;
     background: #e6f2ff;
     color: #333333;
+    overflow-y: auto;
 }
 
 .panel > :first-child {

@@ -12,7 +12,3 @@ p {
     border-color: #00bfff;
     border-width: 1px;
 }
-
-.panel {
-    overflow-x: auto;
-}
