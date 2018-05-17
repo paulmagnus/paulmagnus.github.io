@@ -142,8 +142,8 @@ select {
 /* column settings */
 .column,
 .columns {
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
+    /* padding-left: 0.9375em; */
+    /* padding-right: 0.9375em; */
     width: 100%;
     float: left;
 }
@@ -312,8 +312,8 @@ select {
     .column,
     .columns {
 	position: relative;
-	padding-left: 0.9375em;
-	padding-right: 0.9375em;
+	/* padding-left: 0.9375em; */
+	/* padding-right: 0.9375em; */
 	float: left;
     }
     
@@ -466,8 +466,8 @@ select {
     
     .row.small-uncollapse > .column,
     .row.small-uncollapse > .columns {
-	padding-left: 0.9375em;
-	padding-right: 0.9375em;
+	/* padding-left: 0.9375em; */
+	/* padding-right: 0.9375em; */
 	float: left;
     }
 }
@@ -1809,7 +1809,7 @@ blockquote p {
 
 /* Panels */
 .panel {
-    margin-bottom: 1.25rem;
+    /* margin-bottom: 1.25rem; */
     padding-left: 1.25rem;
     padding-right: 1.25rem;
     padding-top: 1.25rem;
