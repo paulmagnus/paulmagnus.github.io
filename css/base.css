@@ -84,6 +84,8 @@ select {
     margin: 0 auto;
     max-width: 62.5em;
     width: 100%;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
 }
 
 .row:before,
@@ -466,8 +468,8 @@ select {
     
     .row.small-uncollapse > .column,
     .row.small-uncollapse > .columns {
-	/* padding-left: 0.9375em; */
-	/* padding-right: 0.9375em; */
+	padding-left: 0.9375em;
+	padding-right: 0.9375em;
 	float: left;
     }
 }
@@ -621,8 +623,8 @@ select {
     .column,
     .columns {
 	position: relative;
-	padding-left: 0.9375em;
-	padding-right: 0.9375em;
+	/* padding-left: 0.9375em; */
+	/* padding-right: 0.9375em; */
 	float: left;
     }
 
@@ -1071,8 +1073,8 @@ select {
     .column,
     .columns {
 	position: relative;
-	padding-left: 0.9375em;
-	padding-right: 0.9375em;
+	/* padding-left: 0.9375em; */
+	/* padding-right: 0.9375em; */
 	float: left;
     }
 
@@ -1570,7 +1572,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
     line-height: 1.4;
     margin-bottom: 0.5rem;
-    margin-top: 0.2rem;
+    margin-top: 0.5rem;
     text-rendering: optimizeLegibility;
 }
 
