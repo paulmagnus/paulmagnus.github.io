@@ -70,7 +70,6 @@ div, a {
     height: 100%;
 }
 
-
 a h1,
 a h2,
 a h3,
@@ -110,7 +109,7 @@ a h6 {
     }
 }
 
-@media (hover:on-demand) {
+@media (hover:none) {
     /* Touch screen */
 
     .project {
@@ -122,8 +121,8 @@ a h6 {
     }
 }
 
-@media (hover:hover) {
-    /* Full hover support */
+@media not all and (hover:hover) {
+    /* Hover support */
 
     .project {
 	-webkit-transition: transform .2s, box-shadow .2s;
