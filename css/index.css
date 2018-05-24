@@ -1,18 +1,3 @@
-p {
-    margin-bottom: 0;
-}
-
-.collapseable {
-    height: 0px;
-    overflow: hidden;
-}
-
-.frame {
-    border-style: solid;
-    border-color: #00bfff;
-    border-width: 1px;
-}
-
 #project-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -32,25 +17,15 @@ p {
     z-index: 1;
 }
 
-.project {
-    border-radius: 1em;
-    background: inherit;
-    padding: 1.25rem;
+.project,
+.project:hover,
+.project:active,
+.project:focus {
     color: #333333;
-    height: 100%;
 }
 
 .project > p {
     text-align: center;
-}
-
-section {
-    padding: 2rem;
-    text-align: center;
-}
-
-div, a {
-    background: inherit;
 }
 
 #contact-grid {
@@ -61,13 +36,6 @@ div, a {
     width: 100%;
     align: center;
     margin: auto;
-}
-
-.contact {
-    border-radius: 1em;
-    background: inherit;
-    padding: 1.25rem;
-    height: 100%;
 }
 
 a h1,
@@ -109,20 +77,20 @@ a h6 {
     }
 }
 
-@media (hover:none) {
-    /* Touch screen */
+/* @media screen and (hover:on-demand), screen and (hover:none) { */
+/*     /\* Touch screen *\/ */
 
-    .project {
-	box-shadow: 0px 0px 20px #aaa;
-    }
+/*     .project { */
+/* 	box-shadow: 0px 0px 20px #aaa; */
+/*     } */
 
-    .contact {
-	box-shadow: 0px 0px 20px #aaa;
-    }
-}
+/*     .contact { */
+/* 	box-shadow: 0px 0px 20px #aaa; */
+/*     } */
+/* } */
 
-@media not all and (hover:none) {
-    /* Hover support */
+/* @media screen and (hover:hover) { */
+    /* Full hover support */
 
     .project {
 	-webkit-transition: transform .2s, box-shadow .2s;
@@ -145,4 +113,4 @@ a h6 {
 	transform: scale(1.05);
 	box-shadow: 0px 0px 20px #aaa;
     }
-}
+/* } */
