@@ -105,6 +105,15 @@ section {
     box-shadow: 0px 0px 20px #aaa;
 }
 
+video {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.center {
+    align-self: center;
+}
+
 @media only screen (max-width: 40.0625em) {
     .small-1-col {
 	grid-template-columns: 1fr;
