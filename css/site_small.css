@@ -1,0 +1,19 @@
+.small-1-col {
+    grid-template-columns: 1fr;
+}
+
+.small-2-col {
+    grid-template-colmns: 1fr 1fr;
+}
+
+.small-3-col {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.hide-small {
+    display: none;
+}
+
+h1 {
+    font-size: 1.6875rem;
+}
