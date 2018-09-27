@@ -1,291 +1,267 @@
-<!doctype html>
-
+﻿<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#00bfff" />
-    <meta name="Description"
-	  content="Paul J. Magnus software engineer and recent graduate of
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="194x194" href="favicon-194x194.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#00bfff">
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="theme-color" content="#b3ecff">
+
+  <meta name="Description"
+        content="Paul J. Magnus software engineer and recent graduate of
 		   Hamilton College with a bachelors of arts in computer science
 		   and mathematics." />
-    <meta name="keywords"
-	  content="software,engineer,programmer,graduate,python"/>
-    <meta name="author" content="Paul J. Magnus"/>
+  <meta name="keywords"
+        content="software,engineer,programmer,graduate,python" />
+  <meta name="author" content="Paul J. Magnus" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-119767140-1">
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async
-	    src="https://www.googletagmanager.com/gtag/js?id=UA-119767140-1">
-    </script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      
-      gtag('config', 'UA-119767140-1');
-    </script>
+    gtag('config', 'UA-119767140-1');
+  </script>
 
-    
-    <!-- stylesheets -->
-    <link rel="stylesheet" href="css/site.css"/>
-    <link rel="stylesheet"
-	  href="css/site_small.css"
-	  media="(max-width: 40.0625em)"/>
-    <link rel="stylesheet"
-	  href="css/site_medium.css"
-	  media="(min-width: 40.0625em) and (max-width: 64.0625em)"/>
-    <link rel="stylesheet"
-	  href="css/site_large.css"
-	  media="(min-width: 64.0625em)"/>
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="css/site.css" />
+  <link rel="stylesheet"
+        href="css/site_small.css"
+        media="(max-width: 40.0625em)" />
+  <link rel="stylesheet"
+        href="css/site_medium.css"
+        media="(min-width: 40.0625em) and (max-width: 64.0625em)" />
+  <link rel="stylesheet"
+        href="css/site_large.css"
+        media="(min-width: 64.0625em)" />
+  <!-- javascript -->
+  <!-- fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&amp;subset=latin-ext" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
-    <!-- javascript -->
-
-    <!-- fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&amp;subset=latin-ext" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-
-    <!-- icon -->
-    <link rel="icon" type="image/png" href="images/icon.png" />
-
-    <!-- manifest -->
-    <link rel="manifest" href="manifest.json" />
-
-    <script type="application/ld+json">
-      {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Paul J. Magnus",
-      "url": "https://www.pauljmagnus.com",
-      "jobTitle": "Software Engineer",
-      "alumniOf": {
-          "@type": "CollegeOrUniversity",
-          "name": "Hamilton College",
-          "address": {
-              "@type": "PostalAddress",
-              "name": "Hamilton College",
-              "streetAddress": "198 College Hill Road",
-              "addressLocality": "Clinton",
-              "addressRegion": "NY",
-              "postalCode": "13323"
-          },
-          "logo": "https://www.hamilton.edu/assets/images/logo-schema.png",
-          "url": "https://www.hamilton.edu/"
-      },
-      "gender": "male",
-      "email": "pauljmagnus@gmail.com",
-      "sameAs": [
-          "https://www.linkedin.com/in/paul-magnus",
-          "https://github.com/paulmagnus/"
-      ]
-      }
-    </script>
-
-    <title>Paul J Magnus - Software Engineer</title>
-  </head>
-
-  <body>
-    <nav>
-      <div class="row">
-	<div class="small-12 column">
-	  <h1>Paul J Magnus</h1>
-	</div>
+  <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Paul J. Magnus",
+    "url": "https://www.pauljmagnus.com",
+    "jobTitle": "Software Engineer",
+    "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Hamilton College",
+    "address": {
+    "@type": "PostalAddress",
+    "name": "Hamilton College",
+    "streetAddress": "198 College Hill Road",
+    "addressLocality": "Clinton",
+    "addressRegion": "NY",
+    "postalCode": "13323"
+    },
+    "logo": "https://www.hamilton.edu/assets/images/logo-schema.png",
+    "url": "https://www.hamilton.edu/"
+    },
+    "gender": "male",
+    "email": "pauljmagnus@gmail.com",
+    "sameAs": [
+    "https://www.linkedin.com/in/paul-magnus",
+    "https://github.com/paulmagnus/"
+    ]
+    }
+  </script>
+  <title>Paul J Magnus - Software Engineer</title>
+</head>
+<body>
+  <nav>
+    <div class="row">
+      <div class="small-12 column">
+        <h1>Paul J Magnus</h1>
       </div>
-    </nav>
+    </div>
+  </nav>
+  <main>
+    <section>
+      <div class="row">
+        <h4 class="justify">
+          My name is Paul Magnus. I am a software engineer who recently
+          graduated from <a href="https://www.hamilton.edu/">Hamilton College</a> with a Bachelors Degree Cum Laude
+          in Mathematics and Computer Science. I am currently searching for
+          a job developing groundbreaking software.
+        </h4>
+      </div>
+    </section>
+    <section>
+      <div class="row">
+        <center>
+          <h2>Projects</h2>
+          <h3 class="justify">
+            I have been programming since 2013 and throughout that time I have
+            worked on a vairety of projects. Here are a few of the best.
+          </h3>
+        </center>
+      </div>
 
-    <main>
+      <div class="grid large-2-col medium-2-col small-1-col">
+        <div class="project hover-button">
+          <div>
+            <center><h3>PyShell</h3></center>
 
-      <section>
-	<div class="row">
-	  <h4 class="justify">
-	    My name is Paul Magnus. I am a software engineer who recently
-	    graduated from Hamilton College with a Bachelors Degree Cum Laude
-	    in Mathematics and Computer Science. I am currently searching for
-	    a job developing groundbreaking software.
-	  </h4>
-	</div>
-      </section>
+            <hr />
 
-      <section>
-	<div class="row">
-	  <center>
-	    <h2>Projects</h2>
-	    <h3 class="justify">
-	      I have been programming since 2013 and throughout that time I have
-	      worked on a vairety of projects. Here are a few of the best.
-	    </h3>
-	  </center>
-	</div>
-	
-	<div class="grid large-2-col medium-2-col small-1-col">
-	  <div class="project hover-button">
-	    <div>
-	      <center><h3>PyShell</h3></center>
-	    
-	      <hr/>
-	      
-	      <p class="justify">
-		This was my individual senior project for which I was awarded
-		departmental honors by the Hamilton College Computer Science
-		department. PyShell is an extension to Python3 that allows for
-		near seamless Bash-style shell scripting directly within a
-		Python program.
-	      </p>
-	    </div>
+            <p class="justify">
+              This was my individual senior project for which I was awarded
+              departmental honors by the Hamilton College Computer Science
+              department. PyShell is an extension to Python3 that allows for
+              near seamless Bash-style shell scripting directly within a
+              Python program.
+            </p>
+          </div>
+          <div>
+            <a href="pyshell.html">
+              Click here for more <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
 
-	    <div>
-	      <a href="pyshell.html">
-		Click here for more <i class="fa fa-arrow-right" aria-hidden="true"></i>
-	      </a>
-	    </div>
-	  </div>
+        <div class="project hover-button">
+          <div>
+            <center><h3>CSPy</h3></center>
 
+            <hr />
 
+            <p class="justify">
+              CSPy is a statically-typed dialect of Python. This language was
+              developed for use in the introductory coumputer
+              science courses at Hamilton College.
+            </p>
+          </div>
+          <div>
+            <!-- <a href="cspy.html"> -->
+            <a href="https://github.com/paulmagnus/CSPy">
+              Click here for more <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="project hover-button">
+          <div>
+            <center><h3>cs110graphics</h3></center>
 
-	  <div class="project hover-button">
-	    <div>
-	      <center><h3>CSPy</h3></center>
-	      
-	      <hr/>
-	      
-	      <p class="justify">
-		CSPy is a statically-typed dialect of Python. This language was
-		developed for use in the introductory coumputer
-		science courses at Hamilton College.
-	      </p>
-	    </div>
+            <hr />
 
-	    <div>
-	      <!-- <a href="cspy.html"> -->
-	      <a href="https://github.com/paulmagnus/CSPy">
-		Click here for more <i class="fa fa-arrow-right" aria-hidden="true"></i>
-	      </a>
-	    </div>
-	  </div>
+            <p class="justify">
+              The cs110graphics package is used as the primary graphics
+              package for introductory computer science courses at Hamilton
+              College.
+            </p>
+          </div>
+          <div>
+            <a href="https://github.com/paulmagnus/cs110graphics">
+              Click here for more
+              <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="project hover-button">
+          <div>
+            <center><h3>Genetic Space Invaders</h3></center>
+            <hr />
 
-	  <div class="project hover-button">
-	    <div>
-	      <center><h3>cs110graphics</h3></center>
-	      
-	      <hr/>
-	      
-	      <p class="justify">
-		The cs110graphics package is used as the primary graphics
-		package for introductory computer science courses at Hamilton
-		College.
-	      </p>
-	    </div>
+            <p class="justify">
+              A machine learning system using genetic programming for playing
+              the Space Invaders game.
+            </p>
+          </div>
+          <div>
+            <a href="https://github.com/paulmagnus/GP-Semester-Project">
+              Click here for more <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="project hover-button">
+          <div>
+            <center><h3>Space Game</h3></center>
 
-	    <div>
-	      <a href="https://github.com/paulmagnus/cs110graphics">
-		Click here for more
-		<i class="fa fa-arrow-right" aria-hidden="true"></i>
-	      </a>
-	    </div>
-	  </div>
+            <hr />
 
-	  <div class="project hover-button">
-	    <div>
-	      <center><h3>Genetic Space Invaders</h3></center>
+            <p class="justify">
+              I made this simple space game in a computer graphics class using
+              C++ and OpenGL.
+            </p>
+          </div>
+          <div>
+            <a href="spacegame.html">
+              Click here for more <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="project hover-button">
+          <div>
+            <center><h3>Flight Simulator</h3></center>
 
-	      <hr/>
-	      
-	      <p class="justify">
-		A machine learning system using genetic programming for playing
-		the Space Invaders game.
-	      </p>
-	    </div>
+            <hr />
 
-	    <div>
-	      <a href="https://github.com/paulmagnus/GP-Semester-Project">
-		Click here for more <i class="fa fa-arrow-right" aria-hidden="true"></i>
-	      </a>
-	    </div>
-	  </div>
-
-	  <div class="project hover-button">
-	    <div>
-	      <center><h3>Space Game</h3></center>
-	      
-	      <hr/>
-	      
-	      <p class="justify">
-		I made this simple space game in a computer graphics class using
-		C++ and OpenGL.
-	      </p>
-	    </div>
-
-	    <div>
-	      <a href="spacegame.html">
-		Click here for more <i class="fa fa-arrow-right" aria-hidden="true"></i>
-	      </a>
-	    </div>
-	  </div>
-
-	  <div class="project hover-button">
-	    <div>
-	      <center><h3>Flight Simulator</h3></center>
-	      
-	      <hr/>
-	      
-	      <p class="justify">
-		This flight simulator was my first work with 3D graphics in C++
-		and OpenGL.
-	      </p>
-	    </div>
-
-	    <div>
-	      <a href="flight_sim.html">
-		Click here for more <i class="fa fa-arrow-right" aria-hidden="true"></i>
-	      </a>
-	    </div>
-	  </div>
-	</div>
-      </section>
-
-      <section>
-	<center>
-	  <h1>Contact</h1>
-	</center>
-
-	<div class="grid large-2-col medium-2-col small-1-col">
-	  <div class="hover-button" href="google.com">
-	    <h6>
-	      <a href="resume.html">
-		<i class="fa fa-id-card fa-lg"></i>
-		Resum&eacute;
-	      </a>
-	    </h6>
-	  </div>
-
-	  <div class="hover-button">
-	    <h6>
-	      <a href="mailto:pauljmagnus@gmail.com">
-		<i class="fa fa-envelope fa-lg"></i>
-		pauljmagnus@gmail.com
-	      </a>
-	    </h6>
-	  </div>
-
-	  <div class="hover-button">
-	    <h6>
-	      <a href="https://www.linkedin.com/in/paul-magnus/">
-		<i class="fa fa-linkedin fa-lg"></i>
-		paul-magnus
-	      </a>
-	    </h6>
-	  </div>
-
-	  <div class="hover-button">
-	    <h6>
-	      <a href="https://github.com/paulmagnus/">
-		<i class="fa fa-github fa-lg"></i>
-		paulmagnus
-	      </a>
-	    </h6>
-	  </div>
-	</div>
-      </section>
-    </main>
-  </body>
+            <p class="justify">
+              This flight simulator was my first work with 3D graphics in C++
+              and OpenGL.
+            </p>
+          </div>
+          <div>
+            <a href="flight_sim.html">
+              Click here for more <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <center>
+        <h1>Contact</h1>
+      </center>
+      <div class="grid large-2-col medium-2-col small-1-col">
+        <div class="hover-button" href="google.com">
+          <h6>
+            <a href="resume.html">
+              <i class="fa fa-id-card fa-lg"></i>
+              Resum&eacute;
+            </a>
+          </h6>
+        </div>
+        <div class="hover-button">
+          <h6>
+            <a href="mailto:pauljmagnus@gmail.com">
+              <i class="fa fa-envelope fa-lg"></i>
+              pauljmagnus@gmail.com
+            </a>
+          </h6>
+        </div>
+        <div class="hover-button">
+          <h6>
+            <a href="https://www.linkedin.com/in/paul-magnus/" rel="me">
+              <i class="fa fa-linkedin fa-lg"></i>
+              paul-magnus
+            </a>
+          </h6>
+        </div>
+        <div class="hover-button">
+          <h6>
+            <a href="https://github.com/paulmagnus/" rel="me">
+              <i class="fa fa-github fa-lg"></i>
+              paulmagnus
+            </a>
+          </h6>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
 </html>
