@@ -1,17 +1,16 @@
 ﻿<!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="194x194" href="/favicon-194x194.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00bfff">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="194x194" href="favicon-194x194.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#00bfff">
   <meta name="msapplication-TileColor" content="#2d89ef">
   <meta name="theme-color" content="#b3ecff">
 
@@ -35,80 +34,68 @@
 
   <title>Homepage</title>
 </head>
+<body>
+  <!--<nav>
+    <div class="row">
+      <div class="small-12 columns">
+        <h1>Homepage</h1>
 
-  <body>
-    <nav>
-      <div class="row">
-	<div class="small-12 columns">
-	  <h1>Homepage</h1>
-	  
-	  <h2>
-	    <a href="index.html">
-	      <i class="fa fa-home"></i>
-	    </a>
-	  </h2>
-	  
-	  <h2>
-	    <!--<a href="calendar.html">-->
-	    <a href="https://calendar.google.com/calendar/render#main_7">
-	      <i class="fa fa-calendar"></i>
-	    </a>
-	  </h2>
-	</div>
+        <h2>
+          <a href="index.html">
+            <i class="fa fa-home"></i>
+          </a>
+        </h2>
+
+        <h2>
+          <a href="https://calendar.google.com/calendar/render#main_7">
+            <i class="fa fa-calendar"></i>
+          </a>
+        </h2>
       </div>
-    </nav>
-    
-    <main>
-      <section>
-	<div class="grid small-1-col">
-	  <form method="get" action="https://www.google.com/search">
-	    <div id="search-box">
-	      
-	      <input id="search"
-		     type="text"
-		     name="q"
-		     maxlength="255"
-		     placeholder="Google search"
-		     autofocus />
-	    </div>
-	  </form>
-	</div>
-      </section>
+    </div>
+  </nav>-->
 
-      <section>
-	<div class="grid large-3-col medium-2-col small-1-col">
-	  <a class="hover-button"
-	     href="https://mail.google.com/mail/u/?authuser=pauljmagnus@gmail.com">
-	    <h6>pauljmagnus@gmail.com</h6>
-	  </a>
+  <main>
+    <section>
+      <div class="grid" id="calendar-grid">
+        <a class="hover-button"
+           href="https://mail.google.com/mail/u/?authuser=pauljmagnus@gmail.com">
+          <h6>pauljmagnus@gmail.com</h6>
+        </a>
+        <a class="hover-button"
+           href="https://mail.google.com/mail/u/?authuser=pmagnusnh@gmail.com">
+          <h6>pmagnusnh@gmail.com</h6>
+        </a>
+        <a class="hover-button"
+           href="https://mail.google.com/mail/u/?authuser=pmagnus6@gmail.com">
+          <h6>pmagnus6@gmail.com</h6>
+        </a>
+        <a class="hover-button"
+           href="https://www.facebook.com/">
+          <h6>Facebook</h6>
+        </a>
+        <a class="hover-button"
+           href="https://www.linkedin.com/">
+          <h6>Linkedin</h6>
+        </a>
+        <a class="hover-button"
+           href="https://www.github.com/">
+          <h6>GitHub</h6>
+        </a>
 
-	  <a class="hover-button"
-	     href="https://mail.google.com/mail/u/?authuser=pmagnusnh@gmail.com">
-	    <h6>pmagnusnh@gmail.com</h6>
-	  </a>
+        <a class="hover-button"
+           href="index.html">
+          <h6>Website</h6>
+        </a>
 
-	  <a class="hover-button"
-	     href="https://mail.google.com/mail/u/?authuser=pmagnus6@gmail.com">
-	    <h6>pmagnus6@gmail.com</h6>
-	  </a>
+        <a class="hover-button"
+           href="https://calendar.google.com/calendar/render#main_7">
+          <h6>Calendar</h6>
+        </a>
 
-	  <a class="hover-button"
-	     href="https://www.facebook.com/">
-	    <h6>Facebook</h6>
-	  </a>
-
-	  <a class="hover-button"
-	     href="https://www.linkedin.com/">
-	    <h6>Linkedin</h6>
-	  </a>
-
-	  <a class="hover-button"
-	     href="https://www.github.com/">
-	    <h6>GitHub</h6>
-	  </a>
-	</div>
-      </section>      
-    </main>
-  </body>
-
+        <iframe id="calendar" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=pauljmagnus%40gmail.com&amp;color=%231B887A&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%2329527A&amp;ctz=America%2FNew_York"></iframe>
+      </div>
+    </section>
+  </main>
+</body>
 </html>
