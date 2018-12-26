@@ -8,63 +8,91 @@ https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clik
 
 code[class*="language-"],
 pre[class*="language-"] {
-	color: #f8f8f2;
-	background: none;
-	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	word-break: normal;
-	word-wrap: normal;
-	line-height: 1;
+    color: #f8f8f2;
+    background: none;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
 
-	-moz-tab-size: 4;
-	-o-tab-size: 4;
-	tab-size: 4;
+/* width */
+code::-webkit-scrollbar,
+pre::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.5em;
+}
 
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
+/* Track */
+code::-webkit-scrollbar-track,
+pre::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+code::-webkit-scrollbar-thumb,
+pre::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+code::-webkit-scrollbar-thumb:hover,
+pre::-webkit-scrollbar-thumb:hover {
+    background: #555; 
 }
 
 /* Code blocks */
 pre[class*="language-"] {
-	overflow: auto;
-	border-radius: 0.3em;
+    padding: 1em;
+    /* margin: .5em 0; */
+    overflow: auto;
+    /* border-radius: 0.3em; */
 }
 
-pre > code[class*="language-"] {
-    padding: 1em;
-    display: block;
-}
+/* pre > code[class*="language-"] { */
+/*     padding: 1em; */
+/*     display: block; */
+/* } */
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	background: #272822;
+    background: #272822;
 }
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
-	padding: .1em;
-	border-radius: .3em;
-	white-space: normal;
+    padding: .1em;
+    border-radius: .3em;
+    /* white-space: normal; */
+    white-space: pre;
 }
 
 .token.comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
-	color: slategray;
+    color: slategray;
 }
 
 .token.punctuation {
-	color: #f8f8f2;
+    color: #f8f8f2;
 }
 
 .namespace {
-	opacity: .7;
+    opacity: .7;
 }
 
 .token.property,
@@ -72,12 +100,12 @@ pre[class*="language-"] {
 .token.constant,
 .token.symbol,
 .token.deleted {
-	color: #f92672;
+    color: #f92672;
 }
 
 .token.boolean,
 .token.number {
-	color: #ae81ff;
+    color: #ae81ff;
 }
 
 .token.selector,
@@ -86,7 +114,7 @@ pre[class*="language-"] {
 .token.char,
 .token.builtin,
 .token.inserted {
-	color: #a6e22e;
+    color: #a6e22e;
 }
 
 .token.operator,
@@ -95,56 +123,56 @@ pre[class*="language-"] {
 .language-css .token.string,
 .style .token.string,
 .token.variable {
-	color: #f8f8f2;
+    color: #f8f8f2;
 }
 
 .token.atrule,
 .token.attr-value,
 .token.function,
 .token.class-name {
-	color: #e6db74;
+    color: #e6db74;
 }
 
 .token.keyword {
-	color: #66d9ef;
+    color: #66d9ef;
 }
 
 .token.regex,
 .token.important {
-	color: #fd971f;
+    color: #fd971f;
 }
 
 .token.important,
 .token.bold {
-	font-weight: bold;
+    font-weight: bold;
 }
 .token.italic {
-	font-style: italic;
+    font-style: italic;
 }
 
 .token.entity {
-	cursor: help;
+    cursor: help;
 }
 
 pre[data-line] {
-	position: relative;
-	/* padding: 1em 0 1em 3em; */
+    position: relative;
+    padding: 1em 0 1em 3em;
 }
 
 .line-highlight {
-	position: absolute;
-	left: 0;
-	right: 0;
-	padding: inherit 0;
-	margin-top: 1em; /* Same as .prism’s padding-top */
-
-	background: hsla(50, 20%, 50%,.08);
-	background: linear-gradient(to right, hsla(50, 100%, 50%,.2) 70%, hsla(24, 100%, 50%,0));
-
-	pointer-events: none;
-
-	line-height: inherit;
-	white-space: pre;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: inherit 0;
+    margin-top: 1em; /* Same as .prism’s padding-top */
+    
+    background: hsla(50, 20%, 50%,.08);
+    background: linear-gradient(to right, hsla(50, 100%, 50%,.2) 70%, hsla(24, 100%, 50%,0));
+    
+    pointer-events: none;
+    
+    line-height: inherit;
+    white-space: pre;
 }
 
 	.line-highlight:before,
@@ -277,21 +305,50 @@ div.code-toolbar > .toolbar span:focus {
 	text-decoration: none;
 }
 
-pre[data-lang]::before {
+.code-header {
+    display: block;
+    /* border-radius: .5em; */
+    background: #555555;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.code-header::before {
+    color: #f8f8f2;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    line-height: 1;
+
     content: attr(data-lang);
     display: block;
     width: 100%;
-    background: white;
     padding: 1em;
+    text-align: left;
 }
 
-pre[data-lang="CSPy"]::before {
+.code-header[data-lang="CSPy"] {
     background: #9c27b0;
 }
 
-pre[data-lang="Python"]::before {
+.code-header[data-lang="Python"] {
     background: #ff9800;
 }
+
+/* pre[data-lang]::before { */
+/*     content: attr(data-lang); */
+/*     display: block; */
+/*     width: 100%; */
+/*     background: white; */
+/*     padding: 1em; */
+/* } */
+
+/* pre[data-lang="CSPy"]::before { */
+/*     background: #9c27b0; */
+/* } */
+
+/* pre[data-lang="Python"]::before { */
+/*     background: #ff9800; */
+/* } */
 
 code > mark {
     background: hsla(50, 100%, 50%,.08);

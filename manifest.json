@@ -1,24 +1,29 @@
 {
-    "short_name": "Paul",
-    "name": "Paul J. Magnus",
-    "icons": [
-	{
-	    "src": "/images/icon.png",
-	    "type": "image/png",
-	    "sizes": "50x50"
-	},
-	{
-	    "src": "/images/icon-144.png",
-	    "type": "image/png",
-	    "sizes": "144x144"
-	},
-	{
-	    "src": "/images/icon_513.png",
-	    "type": "image/png",
-	    "sizes": "513x513"
-	}
-    ],
-    "start_url": "/index.html",
-    "background_color": "#00bfff",
-    "theme_color": "#00bfff"
+  "short_name": "Paul",
+  "name": "Paul J. Magnus",
+  "icons": [
+    {
+      "src": "favicon-16x16.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    }
+    {
+      "src": "favicon-32x32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "favicon-194x194.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+  ],
+  "start_url": "/index.html",
+  "background_color": "#00bfff",
+  "theme_color": "#00bfff"
 }
