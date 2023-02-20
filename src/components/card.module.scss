@@ -1,0 +1,17 @@
+.card {
+  container: card / inline-size;
+
+  border: none;
+  border-left: 0.5rem solid;
+  padding: 1em;
+  box-shadow: 0 0 10px #aaa;
+  border-radius: 0.25rem;
+  background-color: var(--card-color);
+  border-color: var(--primary);
+}
+
+@media (prefers-color-scheme: dark) {
+  .card {
+    box-shadow: none;
+  }
+}
