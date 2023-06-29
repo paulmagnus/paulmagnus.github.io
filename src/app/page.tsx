@@ -1,91 +1,64 @@
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from './page.module.scss'
-
-const inter = Inter({ subsets: ['latin'] })
+import Card from "@/components/card";
+import Heading from "@/components/heading";
+import Region from "@/components/region";
+import styles from "./page.module.scss";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+      <Region className={styles.epicGroup} aria-labelledby="epicHeading">
+        <Card>
+          <div className={styles.cardLayout}>
+            <Heading id="epicHeading" className={styles.cardTitle}>
+              Epic
+            </Heading>
+            <span className={styles.cardDate}>2019 - Present</span>
+            <div className={styles.cardContent}>
+              I am a full stack developer working on tools to help hospitals
+              improve patient movement and discharge planning. I lead design and
+              development for full stack projects involving database, web
+              server, and front-end client code. I am a leading developer in the
+              overhaul of Epic's core patient movement workflows for transfer
+              and discharge.
+            </div>
+          </div>
+        </Card>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
+        <Card>
+          <Region className={styles.cardLayout} aria-labelledby="patientFlowHeading">
+            <Heading id="patientFlowHeading" className={styles.cardTitle}>
+              Patient Flow
+            </Heading>
+            <span className={styles.cardDate}>2019 - Present</span>
+            <div className={styles.cardContent}>
+              I work on Epic's core patient flow workflows: Admission, Transfer,
+              Leave of Absence, and Discharge. I am a leading developer on
+              Epic's overhaul of these tools into a web-based framework.
+            </div>
+          </Region>
+        </Card>
 
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+        <Card title="Discharge Planning">
+          I work on tools to help hospitals track the plan for a patient's
+          discharge from the hospital. These tools help ensure that patients
+          avoid spending unnecessary time in the hospital.
+        </Card>
+      </Region>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <Region
+        className={styles.hamiltonGroup}
+        aria-labelledby="hamiltonHeading"
+      >
+        <Card>
+          I studied computer science and mathematics at Hamilton College and
+          worked as a teaching assistant for the computer science department. I
+          worked on a summer research project at the college where I lead
+          development of a strongly-typed dialect of Python and a Python
+          graphics package which was used the following year in the introductory
+          computer science classes. In my senior year, I developed an extension
+          to Python that allows for Bash-style scripting called PyShell.
+        </Card>
+      </Region>
     </main>
-  )
+  );
 }

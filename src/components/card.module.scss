@@ -1,0 +1,11 @@
+.card {
+  container: card / inline-size;
+
+  border: none;
+  border-left: 0.5rem solid;
+  padding: 1em;
+  box-shadow: 0 0 10px #aaa;
+  border-radius: 0.25rem;
+  background: rgba(var(--card-rgb), 0);
+  border-color: var(--primary);
+}
