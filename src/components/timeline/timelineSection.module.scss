@@ -1,0 +1,46 @@
+.timelineSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 4rem;
+
+  > :first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+.headerLayout {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    "title date"
+    "content content";
+}
+
+@container (max-width: 300px) {
+  .headerLayout {
+    grid-template-areas:
+      "title"
+      "date"
+      "content";
+  }
+}
+
+.title {
+  grid-area: title;
+
+  margin-bottom: 0.75em;
+  font-size: 1.25em;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.date {
+  grid-area: date;
+  color: var(--gray);
+}
+
+.content {
+  grid-area: content;
+}
